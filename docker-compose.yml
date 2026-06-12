@@ -1,10 +1,8 @@
 version: '3.8'
 
 services:
-  # 服务1：您的个人网站
   personal-website:
-    build: .
-    container_name: my-personal-site
+    image: 13276337701/last-work:latest   # ← 务必确认用户名/仓库名正确
     ports:
       - "8080:80"
     restart: unless-stopped
