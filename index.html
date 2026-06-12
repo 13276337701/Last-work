@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+   <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-introduction
+        | North Minzu University</title>
+    <style>
+        /* 全局样式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            color: #333;
+        }
+
+        /* 标题样式 */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* 卡片容器 */
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        /* 个人卡片样式 */
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px 30px;
+            width: 320px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+
+        /* 头像样式 */
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #667eea;
+            margin-bottom: 20px;
+            background-color: #f0f0f0;
+        }
+
+        /* 信息文字样式 */
+        .name {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 15px;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+            color: #4a5568;
+            font-size: 0.95rem;
+        }
+
+        .info-item .label {
+            font-weight: 600;
+            margin-right: 8px;
+            color: #667eea;
+        }
+
+        /* 页脚 */
+        footer {
+            margin-top: 60px;
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+        }
+
+        /* 响应式适配 */
+        @media (max-width: 768px) {
+            header h1 { font-size: 1.8rem; }
+            .container { gap: 25px; }
+            .card { width: 100%; max-width: 320px; padding: 30px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Self-introduction</h1>
+    <p>North Minzu University</p>
+</header>
+
+<div class="container">
+    <!-- 第一个人：Demon -->
+    <div class="card">
+        <img
+                class="avatar"
+                src="Demon.jpg"
+                alt="Demon的照片"
+        >
+        <div class="name">Demon</div>
+        <div class="info-item">
+            <span class="label">student number：</span>
+            <span>20242194</span>
+        </div>
+        <div class="info-item">
+            <span class="label">university：</span>
+            <span>North Minzu University</span>
+        </div>
+    </div>
+
+    <!-- 第二个人：Kafka -->
+    <div class="card">
+        <img
+                class="avatar"
+                src="Kafka.jpg"
+                alt="Kafka的照片"
+        >
+        <div class="name">Kafka</div>
+        <div class="info-item">
+            <span class="label">student number：</span>
+            <span>20242186</span>
+        </div>
+        <div class="info-item">
+            <span class="label">university：</span>
+            <span>North Minzu University</span>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 Demon & Kafka | North Minzu University
+</footer>
+
+</body>
+</html>
