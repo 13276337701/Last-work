@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  # 服务1：您的个人网站
+  personal-website:
+    build: .
+    container_name: my-personal-site
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+
+  # 服务2：Focalboard 开源Todo应用
+  focalboard:
+    image: mattermost/focalboard  # ✅ 修正：去掉 :latest
+    container_name: focalboard-todo
+    ports:
+      - "8082:8000"
+    volumes:
+      - focalboard-data:/opt/focalboard/data  # ✅ 路径正确
+    restart: unless-stopped
+
+volumes:
+  focalboard-data:  # ✅ 关键：此处必须顶格（与 services 同级），且无缩进错误
